@@ -9,7 +9,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: kiali-operator
+      app.kubernetes.io/name: kiali-operator
   template:
     metadata:
       name: {{ include "kiali-operator.fullname" . }}
